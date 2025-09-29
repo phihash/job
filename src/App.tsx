@@ -38,6 +38,9 @@ function App() {
       </div>
 
       <div className="text-xl">私は今 {status}です</div>
+      <div>
+        {status == "転職活動中" && <p>引越し クレジットカード ほけん</p>}
+      </div>
     </>
   );
 }
