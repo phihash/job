@@ -6,15 +6,28 @@ function App() {
 
   return (
     <>
-      <div className="card">
-        私は今 {status}です
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <button
+        onClick={() => {
+          setStatus("退職");
+        }}
+      >
+        退職
+      </button>
+      <button
+        onClick={() => {
+          setStatus("転職活動中");
+        }}
+      >
+        転職活動中
+      </button>
+      <button
+        onClick={() => {
+          setStatus("休職");
+        }}
+      >
+        休職
+      </button>
+      <div className="text-xl">私は今 {status}です</div>
     </>
   );
 }
