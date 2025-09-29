@@ -1,11 +1,17 @@
 export default function Hero() {
   return (
-    <div className="w-full bg-green-100 flex items-center  justify-center gap-3 p-4">
-      <img className="" src="https://placehold.jp/250x300.png" alt="" />
-      <p className="text-2xl font-bold leading">
-        <span className="block">退職前にすることを</span>
-        <span className="block">確認しよう</span>
-      </p>
+    <div className="w-full bg-green-100 ">
+      <div className="max-w-screen-sm mx-auto mx-auto md:flex items-center justify-center gap-6 ">
+        <img
+          className="block mx-auto py-4"
+          src="https://placehold.jp/350x300.png"
+          alt=""
+        />
+        <p className="font-bold text-center md:leading-tight py-4">
+          <span className="block text-xl ">退職前にすることを</span>
+          <span className="block text-2xl">確認しよう</span>
+        </p>
+      </div>
     </div>
   );
 }
