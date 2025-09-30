@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <div className="flex gap-2 w-full justify-center md:justify-start">
+      <div className="flex gap-4 max-w-screen-sm mx-auto  justify-center">
         <button
           className="bg-green-600 hover:bg-green-500  transition-colors duration-100 ease-out focus:bg-green-900 px-4 py-2 rounded-3xl font-bold text-white cursor-pointer"
           onClick={() => {
@@ -37,7 +37,11 @@ function App() {
           休職
         </button>
       </div>
-      <Card documentName={"源泉徴収票"} description="次の職場で必要です！" />
+      <Card
+        documentName={"源泉徴収票"}
+        description="次の職場で必要です！"
+        isDone={true}
+      />
       <div className="text-xl">私は今 {status}です</div>
       <div>
         {status == "転職活動中" && <p>引越し クレジットカード ほけん</p>}
