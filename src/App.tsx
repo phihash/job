@@ -37,7 +37,7 @@ function App() {
           休職
         </button>
       </div>
-      <Card />
+      <Card documentName={"源泉徴収票"} description="次の職場で必要です！" />
       <div className="text-xl">私は今 {status}です</div>
       <div>
         {status == "転職活動中" && <p>引越し クレジットカード ほけん</p>}

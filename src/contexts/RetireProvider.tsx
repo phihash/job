@@ -5,6 +5,8 @@ import type { ReactNode } from "react";
 type RetireContextType = {
   status: string;
   setStatus: React.Dispatch<React.SetStateAction<string>>;
+  todos: string[];
+  setTodos: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
 export const RetireContext = createContext<RetireContextType | undefined>(
@@ -20,9 +22,10 @@ export const useRetireContext = () => {
 };
 
 export const RetireProvider = ({ children }: { children: ReactNode }) => {
-  const [status, setStatus] = useState<string>("sss");
+  const [status, setStatus] = useState<string>("");
+  const [todos, setTodos] = useState<string[]>([]);
   return (
-    <RetireContext.Provider value={{ status, setStatus }}>
+    <RetireContext.Provider value={{ status, setStatus, todos, setTodos }}>
       {children}
     </RetireContext.Provider>
   );
