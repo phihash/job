@@ -2,6 +2,7 @@ import { useRetireContext } from "./contexts/RetireProvider";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Card from "./components/Card";
 
 function App() {
   const { status, setStatus } = useRetireContext();
@@ -36,7 +37,7 @@ function App() {
           休職
         </button>
       </div>
-
+      <Card />
       <div className="text-xl">私は今 {status}です</div>
       <div>
         {status == "転職活動中" && <p>引越し クレジットカード ほけん</p>}
