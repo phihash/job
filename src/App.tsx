@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Card from "./components/Card";
 
 function App() {
-  const { status, setStatus, tasks, setTasks } = useRetireContext();
+  const { status, setStatus, tasks } = useRetireContext();
 
   return (
     <>
