@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/phihash/Desktop/next-job/app/src/Components/Header.tsx"],"sourcesContent":["export default function Header() {\n  return (\n    <div className=\"w-full\">\n      <div className=\"max-w-screen-sm mx-auto py-4\">\n        <div className=\"flex justify-between items-center \">\n          <p className=\"text-xl font-bold pl-4\">退職前</p>\n          <button\n            className=\"block mr-4 bg-green-600 hover:bg-green-500  transition-colors duration-100 ease-out focus:bg-green-900 px-4 py-2 rounded-xl font-bold text-white cursor-pointer\"\n            onClick={() => {}}\n          >\n            進捗\n          </button>\n        </div>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;wBAAE,WAAU;kCAAyB;;;;;;kCACtC,8OAAC;wBACC,WAAU;wBACV,SAAS,KAAO;kCACjB;;;;;;;;;;;;;;;;;;;;;;AAOX","debugId":null}},
+    {"offset": {"line": 67, "column": 0}, "map": {"version":3,"sources":["file:///Users/phihash/Desktop/next-job/app/you/page.tsx"],"sourcesContent":["import Header from \"../src/Components/Header\";\n\nexport default function Home() {\n  return (\n    <div>\n      <Header />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC,8IAAM;;;;;;;;;;AAGb","debugId":null}}]
+}
