@@ -3,6 +3,28 @@ import { useContext, createContext } from "react";
 import { useState } from "react";
 import type { ReactNode } from "react";
 
+const initialTasks : Task[] = [
+  {
+    id: "1",
+    documentName: "源泉徴収票",
+    description: "次の職場で必要です！",
+    isDone: false,
+  },
+  {
+    id: "2",
+    documentName: "保険証",
+    description: "返却しないと！",
+    isDone: false,
+  },
+  {
+    id: "3",
+    documentName: "社員証",
+    description: "返却しないと！",
+    isDone: false,  
+  }
+];
+
+
 export type Task = {
   id: string;
   documentName: string;
@@ -35,26 +57,7 @@ export const useRetireContext = () => {
 export const RetireProvider = ({ children }: { children: ReactNode }) => {
   const [status, setStatus] = useState<string>("");
   const [todos, setTodos] = useState<string[]>([]);
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: "1",
-      documentName: "源泉徴収票",
-      description: "次の職場で必要です！",
-      isDone: true,
-    },
-    {
-      id: "2",
-      documentName: "保険証",
-      description: "返却しないと！",
-      isDone: false,
-    },
-    {
-      id: "3",
-      documentName: "社員証",
-      description: "返却しないと！",
-      isDone: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState<Task[]>(initialTasks);
 
   const toggleTask = (id: string) => {
     setTasks((prev) => {
