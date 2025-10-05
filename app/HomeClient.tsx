@@ -1,17 +1,23 @@
 "use client";
 
 import Scroll from "./src/Components/Scroll";
+import Hero from "./src/Components/Hero";
+import Link from "next/link";
 
 export default function HomeClient() {
 
   return (
-    <div>
-        <h2 className="text-2xl text-gray-600 font-extrabold mb-2 text-center">基本情報を入力</h2>
-        <Scroll />
-        <h2 className="text-2xl text-gray-600 font-extrabold mb-2 text-center">やることリスト</h2>
-        <div className="mx-auto max-w-screen-sm pt-8">
-
-        </div>       
+    <div className="pt-16">
+        <h2 className="text-2xl text-gray-800 font-extrabold mb-2 text-center">退職前や</h2>
+        <h2 className="text-2xl text-gray-800 font-extrabold mb-2 text-center">引越し前にすることを</h2>
+        <h2 className="text-2xl text-gray-800 font-extrabold mb-2 text-center">簡単に管理 ✅ </h2>
+        <Link href="/progress">
+        <button className="cursor-pointer block mt-12 bg-green-600 hover:bg-green-500 transition-all duration-400 px-3 py-2 rounded-xl font-bold text-white select-none  w-2/5  md:w-1/8 mx-auto">
+            さっそくはじめる!
+        </button>
+        </Link>
+        <Hero />
+        {/* <Scroll />    */}
     </div>
   );
 }
