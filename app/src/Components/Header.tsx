@@ -12,11 +12,18 @@ export default function Header() {
         </Link>
 
         {status !== "はじめる" ? (
-          <Link href="/my">
-            <button className="cursor-pointer block bg-green-600 px-4 py-2 rounded-xl font-bold text-white select-none">
-              マイページ
-            </button>
-          </Link>
+          <div className="flex gap-2">
+            <Link href="/my">
+              <button className="cursor-pointer block bg-green-600 px-4 py-2 rounded-xl font-bold text-white select-none">
+                マイページ
+              </button>
+            </Link>
+            <Link href="/progress">
+              <button className="cursor-pointer block bg-green-600 px-4 py-2 rounded-xl font-bold text-white select-none">
+                基本情報
+              </button>
+            </Link>
+          </div>
         ) : (
           <Link
             href="/progress"
