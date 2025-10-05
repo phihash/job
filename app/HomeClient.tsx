@@ -1,6 +1,3 @@
-"use client";
-
-import Scroll from "./src/Components/Scroll";
 import Hero from "./src/Components/Hero";
 import Link from "next/link";
 
@@ -22,7 +19,6 @@ export default function HomeClient() {
         </button>
       </Link>
       <Hero />
-      {/* <Scroll />    */}
     </div>
   );
 }
